@@ -8,10 +8,10 @@
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <title></title>
+    <title>Lab 1</title>
 </head>
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -46,15 +46,16 @@
                 <form class="form" id="form1" runat="server">
                     <div class="form-group">
                         <asp:Label ID="FirstNameLabel" Text="First Name" runat="server" />
-                        <asp:TextBox ID="FirstNameTextBox" runat="server" CssClass="form-control" />
+                        <asp:TextBox required="true" ID="FirstNameTextBox" runat="server" CssClass="form-control" CausesValidation="True" />
                     </div>
                     <div class="form-group">
                         <asp:Label ID="LastNameLabel" Text="Last Name" runat="server" />
-                        <asp:TextBox ID="LastNameTextBox" runat="server" CssClass="form-control" />
+                        <asp:TextBox required="true" ID="LastNameTextBox" runat="server" CssClass="form-control" CausesValidation="True" />
                     </div>
                     <div class="form-group">
                         <asp:Label ID="AgeLabel" Text="Age" runat="server" />
-                        <asp:TextBox ID="AgeTextBox" runat="server" CssClass="form-control" />
+                        <asp:TextBox required="true" ID="AgeTextBox" runat="server" CssClass="form-control" CausesValidation="True" />
+                    <asp:RangeValidator ForeColor="Red" ID="AgeRangeValidator" runat="server" ErrorMessage="Please Enter a valid Age between 1 and 130" MinimumValue="1" MaximumValue="130" Type="Integer" ControlToValidate="AgeTextBox"></asp:RangeValidator>
                     </div>
                     <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-primary" OnClick="SubmitButton_Click1" />
                     <br />
