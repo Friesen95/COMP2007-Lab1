@@ -16,7 +16,7 @@ namespace WebApplicationB
 
         protected void SubmitButton_Click1(object sender, EventArgs e)
         {
-            FulleNameTextBox.Text = FirstNameTextBox.Text + " " + LastNameTextBox.Text;
+            FulleNameTextBox.Text = FirstNameTextBox.Text.ToString() + " " + LastNameTextBox.Text.ToString();
         }
     }
 }

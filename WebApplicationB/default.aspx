@@ -55,7 +55,7 @@
                     <div class="form-group">
                         <asp:Label ID="AgeLabel" Text="Age" runat="server" />
                         <asp:TextBox required="true" ID="AgeTextBox" runat="server" CssClass="form-control" CausesValidation="True" />
-                    <asp:RangeValidator ForeColor="Red" ID="AgeRangeValidator" runat="server" ErrorMessage="Please Enter a valid Age between 1 and 130" MinimumValue="1" MaximumValue="130" Type="Integer" ControlToValidate="AgeTextBox"></asp:RangeValidator>
+                        <asp:RangeValidator ID="AgeRangeValidator" runat="server" ErrorMessage="Please Enter a valid Age between 1 and 130" MinimumValue="1" MaximumValue="130" Type="Integer" ControlToValidate="AgeTextBox"></asp:RangeValidator>
                     </div>
                     <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-primary" OnClick="SubmitButton_Click1" />
                     <br />
