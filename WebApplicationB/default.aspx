@@ -62,7 +62,7 @@
                     <hr />
 
                     <div class="form-group">
-                        <asp:Label ID="FullNameLabel" Text="FUll Name" runat="server" />
+                        <asp:Label ID="FullNameLabel" Text="Full Name" runat="server" />
                         <asp:TextBox ID="FulleNameTextBox" runat="server" CssClass="form-control" />
 
                     </div>
